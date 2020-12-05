@@ -16,6 +16,7 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+/* Хэдер */
 .header {
   height: 72px;
   width: 100%;
@@ -33,7 +34,7 @@ body {
   height: 100%;
   display: flex;
   align-items: center;
-  margin-left: 83px;
+  margin-left: 82px;
 }
 
 .header__sign-in {
@@ -54,6 +55,15 @@ body {
   margin-right: 16px;
 }
 
+.header__sign-in:hover {
+  background-color: #57ad56;
+  color: white;
+}
+
+.header__register:hover {
+  background-color: #57ad56;
+}
+
 .header__register {
   text-decoration: none;
   height: 40px;
@@ -66,7 +76,7 @@ body {
   font-weight: 500;
   font-size: var(--font--13);
   line-height: 24px;
-  margin-right: 26px;
+  margin-right: 27px;
   border-radius: 2px;
 }
 
@@ -76,7 +86,7 @@ body {
   width: 20px;
   height: 23px;
   background-repeat: no-repeat;
-  margin-right: 95px;
+  margin-right: 96px;
   background-position: center;
 }
 
@@ -84,4 +94,100 @@ body {
   background: url(/images/basket-hover.svg);
   background-repeat: no-repeat;
   background-position: center;
+}
+
+/* Хиро */
+
+.hero {
+  width: 100%;
+  height: 364px;
+  background: url(/images/hero.svg);
+  position: relative;
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero__text {
+  width: 389px;
+  height: 204px;
+  background: #ffffff;
+  box-shadow: 0px 0px 16px rgba(117, 117, 117, 0.2);
+  border-radius: 2px;
+  position: absolute;
+  top: 80px;
+  left: 80px;
+}
+
+.hero__name {
+  font-size: 36px;
+  line-height: 42px;
+  color: #1d1d1d;
+  font-weight: normal;
+  text-align: center;
+  margin-top: 38px;
+}
+
+.hero__cuisine {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #626262;
+  float: left;
+  margin-left: 38px;
+  margin-top: 62px;
+}
+
+.hero__time {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  color: #ffffff;
+  background-color: var(--black);
+  width: 97px;
+  height: 32px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: right;
+  margin-top: 54px;
+  margin-right: 32px;
+}
+
+/* Меню */
+
+.menu {
+  width: 100%;
+  height: 80px;
+  background: #ffffff;
+  border: 1px solid rgba(117, 117, 117, 0.2);
+  display: flex;
+  align-items: center;
+}
+
+.menu__nav {
+  display: flex;
+  margin-left: 80px;
+  width: 605px;
+  justify-content: space-between;
+}
+
+.menu__link {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #626262;;
+}
+
+.menu__link_color_green {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #327430;
 }
