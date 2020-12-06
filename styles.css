@@ -308,7 +308,6 @@ body {
 .footer__select {
   width: 227px;
   height: 40px;
-  background-color: #3b3b3b;
   border-radius: 2px;
   color: white;
   text-transform: uppercase;
@@ -319,6 +318,10 @@ body {
   padding-left: 48px;
   border: none;
   cursor: pointer;
+  appearance: none;
+  background: url(/images/arrow.svg)  #3b3b3b;
+  background-repeat: no-repeat;
+  background-position: right 16px top 16px;
 }
 
 .footer__menu {
