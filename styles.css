@@ -218,6 +218,13 @@ body {
   position: relative;
 }
 
+.main__hr {
+  background: #757575;
+  display: none;
+  width: 50px;
+  height: 1px;
+}
+
 .main__food-list {
   display: grid;
   margin: 0 auto;
