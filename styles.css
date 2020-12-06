@@ -204,12 +204,11 @@ body {
   font-size: 22px;
   line-height: 34px;
   color: #1d1d1d;
-  padding-left: 80px;
+  padding-left: 8%;
   padding-top: 57px;
 }
 
 .main__food-card {
-  mix-blend-mode: normal;
   height: 160px;
   max-width: 470px;
   border: 1px solid rgba(117, 117, 117, 0.2);
@@ -221,11 +220,12 @@ body {
 
 .main__food-list {
   display: grid;
-  margin-left: 82px;
+  margin: 0 auto;
   margin-top: 31px;
-  grid-template-columns: 470px 470px;
+  grid-template-columns:minmax(300px, 470px) minmax(300px, 470px);
   grid-template-rows: 160px 160px 160px;
   gap: 50px 16px;
+  max-width: 940px;
 }
 
 .main__food-description {
@@ -241,7 +241,7 @@ body {
 
 .main__description {
   height: 100%;
-  width: 298px;
+  width: 300px;
   padding-left: 14px;
 }
 
@@ -254,13 +254,12 @@ body {
   line-height: 21px;
   color: #626262;
   margin-top: 4px;
+  display: none;
 }
 
-.main__food-image-1 {
-  position: absolute;
+.main__food-image {
   max-height: 160px;
   max-width: 170px;
-  right: 0;
 }
 
 .main__price {
@@ -269,5 +268,17 @@ body {
   font-size: 15px;
   line-height: 21px;
   color: #1d1d1d;
-  margin-top: 58px;
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+}
+
+.main__food-card:hover {
+cursor: pointer;
+background: #faf9f9;
+mix-blend-mode: normal;
+}
+
+.main__food-card:hover .main__secondary__description {
+display: inline;
 }
